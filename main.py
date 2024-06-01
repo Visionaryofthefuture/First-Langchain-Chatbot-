@@ -10,11 +10,10 @@ load_dotenv()
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
-## Prompt Template
 
 prompt=ChatPromptTemplate.from_messages(
     [
-        ("system","You are a helpful assistant. Please response to the user queries"),
+        ("system","You are a assistant. Please respond to the user queries"),
         ("user","Question:{question}")
     ]
 )
